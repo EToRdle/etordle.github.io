@@ -1,0 +1,42 @@
+html {
+    font-family: system-ui;
+    font-size: 20px;
+}
+
+body {
+    background: #DDD;
+}
+
+table {
+    font-family: system-ui;
+    width: 100%;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 10;
+}
+
+tr:nth-child(even) {
+    background-color: #EEE;
+}
+
+tr:nth-child(odd) {
+    background-color: #FFF;
+}
+
+.darkMode {
+    background: #000;
+    color: #FFF;
+}
+
+.darkMode tr:nth-child(even) {
+    background: #111;
+    color: #FFF;
+}
+
+.darkMode tr:nth-child(odd) {
+    background: #222;
+    color: #FFF;
+}

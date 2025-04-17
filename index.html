@@ -1,144 +1,115 @@
-<html>
-  <head>
-    <style>
-      html {
-        font-family: system-ui;
-        font-size: 20px;
-      }
-      body {
-        background: #DDD;
-      }
-      table {
-        font-family: system-ui;
-        width: 100%;
-      }
-      td, th {
-        text-align: left;
-        padding: 10;
-      }
-      tr:nth-child(even) {
-        background-color: #EEE;
-      }
-      tr:nth-child(odd) {
-        background-color: #FFF;
-      }
-      .darkMode {
-        background: #000;
-        color: #FFF;
-      }
-      .darkMode tr:nth-child(even) {
-        background: #111;
-        color: #FFF;
-      }
-      .darkMode tr:nth-child(odd) {
-        background: #222;
-        color: #FFF;
-      }
-    </style>
-  </head>
-  <h1>
-    JToRdle // by thej10n
-  </h1>
-  <input id="towerinput" placeholder="Tower Acronym">
-  <button type="submit" onclick="submit()">
-    Submit
-  </button>
-  <button id="resetbutton" type="reset" onclick="reset()">
-    Reset
-  </button>
-  <button type="button" onclick="toggle()">
-    Toggle light/dark mode
-  </button>
-  <br><br>
-  <input type="checkbox" id="includepom">
-    Include Pit of Misery SCs
-  </input>
-  <input type="checkbox" id="includemini">
-    Include Mini Towers
-  </input>
-  <input type="checkbox" id="includesofm">
-    Include SoFM
-  </input>
-  <br>
-  <b>Settings do not take effect until the game is reset.</b>
-  <p id="feedback">0/6 guesses</p>
-  <table id="guesses" style="font-size: 20;">
-    <tr>
-      <th>Name</th>
-      <th>Difficulty</th>
-      <th>Area</th>
-      <th>Tower Type</th>
-      <th>Length</th>
-    </tr>
-    <tr>
-      <td>&#x200B;</td>
-      <td>&#x200B;</td>
-      <td>&#x200B;</td>
-      <td>&#x200B;</td>
-      <td>&#x200B;</td>
-    </tr>
-    <tr>
-      <td>&#x200B;</td>
-      <td>&#x200B;</td>
-      <td>&#x200B;</td>
-      <td>&#x200B;</td>
-      <td>&#x200B;</td>
-    </tr>
-    <tr>
-      <td>&#x200B;</td>
-      <td>&#x200B;</td>
-      <td>&#x200B;</td>
-      <td>&#x200B;</td>
-      <td>&#x200B;</td>
-    </tr>
-    <tr>
-      <td>&#x200B;</td>
-      <td>&#x200B;</td>
-      <td>&#x200B;</td>
-      <td>&#x200B;</td>
-      <td>&#x200B;</td>
-    </tr>
-    <tr>
-      <td>&#x200B;</td>
-      <td>&#x200B;</td>
-      <td>&#x200B;</td>
-      <td>&#x200B;</td>
-      <td>&#x200B;</td>
-    </tr>
-    <tr>
-      <td>&#x200B;</td>
-      <td>&#x200B;</td>
-      <td>&#x200B;</td>
-      <td>&#x200B;</td>
-      <td>&#x200B;</td>
-    </tr>
-  </table>
-  <p id="rules">
-    <h2>
-      Rules:
-    </h2>
-    <div style="line-height: 2;">
-      Guess the mystery JToH tower within 6 guesses. Enter the tower acronym and press "Submit" to guess. Press "Reset" to reset the game.<br>
-      <b>Name: </b>Length of the tower's acronym. 🔼=longer, 🔽=shorter, 🟩=correct<br>
-      <b>Difficulty: </b>Difficulty of the tower. 🔼=higher, 🔽=lower, 🟩=correct<br>
-      <b>Area: </b>Location of the tower. 🟥=wrong world, 🔼=higher, 🔽=lower, 🔄=connected, 🟩=correct<br>
-      <b>(NOTE: </b>Lost River and Silent Abyss are connected to both each other and Ring 5.)<br>
-      <b>Tower Type: </b>Type of the tower. 🟥=incorrect, 🟩=correct<br>
-      <b>Length: </b>Playtime of the tower. 🔼=longer, 🔽=shorter, 🟩=correct
-    </div>
-  </p>
-  <p id="updates">
-    <h2>
-      Update Log:
-    </h2>
-    <div style="line-height: 2;">
-      <b>[05-11-2024]</b> winstreaks <br>
-      <b>[30-10-2024]</b> bugfixes <br>
-      <b>[28-10-2024]</b> settings + small design update <br>
-      <b>[22-10-2024]</b> zone ninth <br>
-      <b>[27-05-2024]</b> fixed some outdated difficulties <br>
-      <b>[26-05-2024]</b> release
-    </div>
-  </p>
-  <script src="script.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EToRdle</title>
+</head>
+	<body>
+		<h1>
+			EToRdle // Original by thej10n, Revamp by ItzMeZenith
+		</h1>
+		<input id="towerinput" placeholder="Tower Acronym">
+		<button type="submit" onclick="submit()">
+			Submit
+		</button>
+		<button id="resetbutton" type="reset" onclick="reset()">
+			Reset
+		</button>
+		<button type="button" onclick="toggle()">
+			Toggle light/dark mode
+		</button>
+		<br><br>
+		<input type="checkbox" id="includepom">
+			Include Pit of Misery SCs
+		</input>
+		<input type="checkbox" id="includemini">
+			Include Mini Towers
+		</input>
+		<br>
+		<b>Settings do not take effect until the game is reset.</b>
+		<p id="feedback">0/6 guesses</p>
+		<table id="guesses" style="font-size: 20;">
+			<tr>
+				<th>Name</th>
+				<th>Difficulty</th>
+				<th>Area</th>
+				<th>Tower Type</th>
+				<th>Length</th>
+			</tr>
+			<tr>
+				<td>&#x200B;</td>
+				<td>&#x200B;</td>
+				<td>&#x200B;</td>
+				<td>&#x200B;</td>
+				<td>&#x200B;</td>
+			</tr>
+			<tr>
+				<td>&#x200B;</td>
+				<td>&#x200B;</td>
+				<td>&#x200B;</td>
+				<td>&#x200B;</td>
+				<td>&#x200B;</td>
+			</tr>
+			<tr>
+				<td>&#x200B;</td>
+				<td>&#x200B;</td>
+				<td>&#x200B;</td>
+				<td>&#x200B;</td>
+				<td>&#x200B;</td>
+			</tr>
+			<tr>
+				<td>&#x200B;</td>
+				<td>&#x200B;</td>
+				<td>&#x200B;</td>
+				<td>&#x200B;</td>
+				<td>&#x200B;</td>
+			</tr>
+			<tr>
+				<td>&#x200B;</td>
+				<td>&#x200B;</td>
+				<td>&#x200B;</td>
+				<td>&#x200B;</td>
+				<td>&#x200B;</td>
+			</tr>
+			<tr>
+				<td>&#x200B;</td>
+				<td>&#x200B;</td>
+				<td>&#x200B;</td>
+				<td>&#x200B;</td>
+				<td>&#x200B;</td>
+			</tr>
+		</table>
+		<p id="rules">
+		<h2>
+			Rules:
+		</h2>
+		<div style="line-height: 2;">
+			Guess the mystery JToH tower within 6 guesses. Enter the tower acronym and press "Submit" to guess. Press "Reset" to
+			reset the game.<br>
+			<b>Name: </b>Length of the tower's acronym. 🔼=longer, 🔽=shorter, 🟩=correct<br>
+			<b>Difficulty: </b>Difficulty of the tower. 🔼=higher, 🔽=lower, 🟩=correct<br>
+			<b>Area: </b>Location of the tower. 🟥=wrong world, 🔼=higher, 🔽=lower, 🔄=connected, 🟩=correct<br>
+			<b>(NOTE: </b>Lost River and Silent Abyss are connected to both each other and Ring 5.)<br>
+			<b>Tower Type: </b>Type of the tower. 🟥=incorrect, 🟩=correct<br>
+			<b>Length: </b>Playtime of the tower. 🔼=longer, 🔽=shorter, 🟩=correct
+		</div>
+		</p>
+		<p id="updates">
+		<h2>
+			Update Log:
+		</h2>
+		<div style="line-height: 2;">
+			<b>[16-04-2025]</b> got repository from thje + added all towers added after zone 9 + updated difficulty placements <br>
+			<b>[05-11-2024]</b> winstreaks <br>
+			<b>[30-10-2024]</b> bugfixes <br>
+			<b>[28-10-2024]</b> settings + small design update <br>
+			<b>[22-10-2024]</b> zone ninth <br>
+			<b>[27-05-2024]</b> fixed some outdated difficulties <br>
+			<b>[26-05-2024]</b> release
+		</div>
+		</p>
+	<script src="script.js"></script>
+	</body>
 </html>
