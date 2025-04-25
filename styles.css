@@ -7,15 +7,14 @@ body {
     background: #DDD;
 }
 
-table {
+table{
     font-family: system-ui;
     width: 100%;
 }
 
-td,
-th {
+td, th{
     text-align: left;
-    padding: 10;
+    padding: 10px;
 }
 
 tr:nth-child(even) {
