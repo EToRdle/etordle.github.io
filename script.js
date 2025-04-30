@@ -637,3 +637,13 @@ function reset() {
 function toggle() {
 	document.body.classList.toggle("darkMode");
 }
+function enterKeySubmit(){
+	document.onkeyup = function (e) {
+ 		if (key === "Enter") {
+    	preventDefault();
+    	document.getElementById("submitbutton").click();
+  		}
+	};
+}
+
+enterKeySubmit()
