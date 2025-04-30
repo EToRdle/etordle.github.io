@@ -639,8 +639,7 @@ function toggle() {
 }
 function enterKeySubmit(){
 	document.onkeyup = function (e) {
- 		if (key === "Enter") {
-    	preventDefault();
+ 		if (e.key === "Enter") {
     	document.getElementById("submitbutton").click();
   		}
 	};
