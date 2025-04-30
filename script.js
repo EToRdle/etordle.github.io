@@ -13,7 +13,7 @@ var towerInfo = {
 	"toh": ["ToH", 2, "Ring 1", "Tower", 0],
 	"tok": ["ToK", 2, "Ring 1", "Tower", 0],
 	"toky": ["ToKY", 3, "Ring 1", "Tower", 0],
-	"tos": ["ToS", 4, "Ring 1", "Tower", 0],
+	"tos": ["ToS", 3, "Ring 1", "Tower", 0],
 	"tosp": ["ToSP", 4, "Ring 1", "Tower", 0],
 	"tor": ["ToR", 4, "Ring 1", "Tower", 0],
 	"toie": ["ToIE", 5, "Ring 1", "Tower", 0],
@@ -256,7 +256,7 @@ var towerInfo = {
 	"tocmc": ["ToCMC", 5, "Zone 7", "Tower", 0],
 	"tosaps": ["ToSaPS", 5, "Zone 7", "Tower", 1],
 	"toui": ["ToUI", 6, "Zone 7", "Tower", 1],
-	"tofm": ["ToFM", 8, "Zone 7", "Tower", 0],
+	"tofm": ["ToFM", 9, "Zone 7", "Tower", 0],
 	"toua": ["ToUA", 9, "Zone 7", "Tower", 1],
 	"coact": ["CoACT", 6, "Zone 7", "Citadel", 1],
 
