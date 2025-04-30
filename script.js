@@ -159,7 +159,7 @@ var towerInfo = {
 	"cop": ["CoP", 6, "Zone 1", "Citadel", 1],
 
 	// Zone 2
-	"tob": ["ToB", 1, "Zone 2", "Tower", 0],
+	"tovr": ["ToVR", 1, "Zone 2", "Tower", 0],
 	"tosa": ["ToSA", 1, "Zone 2", "Tower", 0],
 	"togla": ["ToGLA", 2, "Zone 2", "Tower", 0],
 	"tota": ["ToTA", 2, "Zone 2", "Tower", 0],
