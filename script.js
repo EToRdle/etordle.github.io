@@ -313,7 +313,7 @@ var towerInfo = {
 	"tobp": ["ToBP", 8, "Zone 10", "Tower", 1],
 	"tocav": ["ToCaV", 9, "Zone 10", "Tower", 0],
 	"tort": ["ToRoMW", 10, "Zone 10", "Tower", 1],
-	"cootwi": ["CoOTWI", 6, "Zone 10", "Tower", 1],
+	"cootwi": ["CoOTWI", 6, "Zone 10", "Citadel", 1],
 
 	// FR
 	"somd": ["SoMD", 0, "FR", "Steeple", 0],
