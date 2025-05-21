@@ -162,7 +162,7 @@ var towerInfo = {
 	"tovr": ["ToVR", 1, "Zone 2", "Tower", 0],
 	"tosa": ["ToSA", 1, "Zone 2", "Tower", 0],
 	"togla": ["ToGLA", 2, "Zone 2", "Tower", 0],
-	"tota": ["ToTA", 2, "Zone 2", "Tower", 0],
+	"tota": ["ToTA", 3, "Zone 2", "Tower", 0],
 	"toud": ["ToUD", 3, "Zone 2", "Tower", 0],
 	"todac": ["ToDaC", 4, "Zone 2", "Tower", 0],
 	"topf": ["ToPF", 4, "Zone 2", "Tower", 0],
