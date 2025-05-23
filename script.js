@@ -319,7 +319,7 @@ var towerInfo = {
 	"somd": ["SoMD", 0, "FR", "Steeple", 0],
 	"tojgf": ["ToJGF", 0, "FR", "Tower", 0],
 	"sop": ["SoP", 1, "FR", "Steeple", 0],
-	"solw": ["SoLW", 2, "FR", "Steeple", 0],
+	"solw": ["SoLW", 1, "FR", "Steeple", 0],
 	"sour": ["SoUR", 2, "FR", "Steeple", 0],
 	"toii": ["ToII", 3, "FR", "Tower", 0],
 	"tov": ["ToV", 3, "FR", "Tower", 0],
