@@ -515,7 +515,7 @@ function getWinstreakMessage(w) {
 function setCanReset(newValue) {
 	const resetButton = document.getElementById("resetbutton");
 	canReset = newValue;
-	if (canReset) {
+	if (canReset && winstreak<1 || canReset && gameFrozen) {
 		resetButton.innerHTML = "Reset"
 	} else {
 		resetButton.innerHTML = "Reset and lose winstreak"
@@ -536,7 +536,7 @@ function submit() {
 		document.getElementById("towerinput").value = "";
 
 		if (towerData[0] == answerData[0]) {
-			document.getElementById("feedback").innerHTML = "You won! The answer was " + answerData[0] + getWinstreakMessage(winstreak);
+			document.getElementById("feedback").innerHTML = "You won! The answer was " + answerData[0] + getWinstreakMessage(winstreak+1);
 			setCanReset(true);
 			gameFrozen = true;
 			modifyTable(guessNum, 0, towerData[0] + " 🏆");
@@ -544,6 +544,7 @@ function submit() {
 			modifyTable(guessNum, 2, towerData[2] + " 🏆");
 			modifyTable(guessNum, 3, towerData[3] + " 🏆");
 			modifyTable(guessNum, 4, lengths[towerData[4]] + " 🏆");
+			document.getElementById("resetbutton").innerHTML = "Reset"
 			return;
 		}
 
@@ -608,10 +609,10 @@ function submit() {
 	}
 }
 function reset() {
-	if (canReset) {
+	if (canReset && winstreak<1 || canReset && gameFrozen) {
 		if(gameFrozen){winstreak += 1;}
 		setCanReset(true);
-		wantReset=false
+		wantReset=true
 	} else {
 		if(confirm("Are you sure you want to reset?")){
 			wantReset=true
@@ -641,7 +642,9 @@ function reset() {
 		}
 		document.getElementById("feedback").innerHTML = "0/6 guesses" + getWinstreakMessage(winstreak);
 		document.getElementById("towerinput").value = "";
-		document.getElementById("resetbutton").innerHTML = "Reset"
+		if(winstreak<1){
+			document.getElementById("resetbutton").innerHTML = "Reset"
+		}
 		wantReset=false;
 		setCanReset(true);
 	}
