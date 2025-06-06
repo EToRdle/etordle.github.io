@@ -1,7 +1,24 @@
 // this is the worst code thje has ever written and I have to decipher it :(
+	function loadWinstreak() {
+		const saved = localStorage.getItem("winstreak");
+		if(saved === null){
+			winstreak = 0;
+			saveWinstreak();
+			canReset = true;
+		}else{
+			winstreak = parseInt(saved)
+			saveWinstreak();
+			canReset = false;
+			if(winstreak>0){document.getElementById("resetbutton").innerHTML = "Reset and lose winstreak"}
+		}
+		document.getElementById("feedback").innerHTML = guessNum + "/6 guesses" + getWinstreakMessage(winstreak);
+	}
+	
+	window.onload = function () {
+		loadWinstreak();
+	};
+
 var guessNum = 0;
-var winstreak = 0;
-var canReset = true;
 var gameFrozen = false;
 var towerInfo = {
 
@@ -481,6 +498,7 @@ var areaInfo = {
 	"AA": [1, 2, 1],
 	"PoM": [1, 3, 1]
 }
+
 function modifyTable(row, column, text) {
 	var guessTable = document.getElementById("guesses");
 	var guessRow = guessTable.getElementsByTagName("tr")[row + 1];
@@ -536,7 +554,9 @@ function submit() {
 		document.getElementById("towerinput").value = "";
 
 		if (towerData[0] == answerData[0]) {
-			document.getElementById("feedback").innerHTML = "You won! The answer was " + answerData[0] + getWinstreakMessage(winstreak+1);
+			winstreak += 1;
+			saveWinstreak()
+			document.getElementById("feedback").innerHTML = "You won! The answer was " + answerData[0] + getWinstreakMessage(winstreak);
 			setCanReset(true);
 			gameFrozen = true;
 			modifyTable(guessNum, 0, towerData[0] + " 🏆");
@@ -610,13 +630,13 @@ function submit() {
 }
 function reset() {
 	if (canReset && winstreak<1 || canReset && gameFrozen) {
-		if(gameFrozen){winstreak += 1;}
 		setCanReset(true);
 		wantReset=true
 	} else {
 		if(confirm("Are you sure you want to reset?")){
 			wantReset=true
 			winstreak = 0;
+			saveWinstreak()
 		}else{
 			wantReset=false
 		}
@@ -652,6 +672,11 @@ function reset() {
 function toggle() {
 	document.body.classList.toggle("darkMode");
 }
+
+function saveWinstreak() {
+	localStorage.setItem("winstreak", winstreak);
+}
+
 function enterKeySubmit(){
 	document.onkeyup = function (e) {
  		if (e.key === "Enter") {
@@ -661,3 +686,4 @@ function enterKeySubmit(){
 }
 
 enterKeySubmit()
+saveWinstreak()
