@@ -609,7 +609,7 @@ function submit() {
 }
 function reset() {
 	if (canReset) {
-		winstreak += 1;
+		if(gameFrozen){winstreak += 1;}
 		setCanReset(true);
 		wantReset=false
 	} else {
