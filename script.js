@@ -1,7 +1,7 @@
 // this is the worst code thje has ever written and I have to decipher it :(
 var guessNum = 0;
 var winstreak = 0;
-var canReset = false;
+var canReset = true;
 var gameFrozen = false;
 var towerInfo = {
 
@@ -513,11 +513,12 @@ function getWinstreakMessage(w) {
 	return " (Winstreak: " + w + ")";
 }
 function setCanReset(newValue) {
+	const resetButton = document.getElementById("resetbutton");
 	canReset = newValue;
 	if (canReset) {
-		document.getElementById("resetbutton").innerHTML = "Reset"
+		resetButton.innerHTML = "Reset"
 	} else {
-		document.getElementById("resetbutton").innerHTML = "Reset and lose winstreak"
+		resetButton.innerHTML = "Reset and lose winstreak"
 	}
 }
 function submit() {
@@ -609,30 +610,41 @@ function submit() {
 function reset() {
 	if (canReset) {
 		winstreak += 1;
-		setCanReset(false);
+		setCanReset(true);
+		wantReset=false
 	} else {
-		winstreak = 0;
+		if(confirm("Are you sure you want to reset?")){
+			wantReset=true
+			winstreak = 0;
+		}else{
+			wantReset=false
+		}
 	}
-	gameFrozen = false;
-	guessNum = 0;
-	newTowerInfo = { ...towerInfo };
-	if (document.getElementById("includepom").checked) {
-		newTowerInfo = extendArray(newTowerInfo, PoMSCInfo);
+	if(wantReset){
+		gameFrozen = false;
+		guessNum = 0;
+		newTowerInfo = { ...towerInfo };
+		if (document.getElementById("includepom").checked) {
+			newTowerInfo = extendArray(newTowerInfo, PoMSCInfo);
+			if (document.getElementById("includemini").checked) {
+				newTowerInfo = extendArray(newTowerInfo, PoMMiniInfo);
+			}
+		}
 		if (document.getElementById("includemini").checked) {
-			newTowerInfo = extendArray(newTowerInfo, PoMMiniInfo);
+			newTowerInfo = extendArray(newTowerInfo, miniInfo);
 		}
-	}
-	if (document.getElementById("includemini").checked) {
-		newTowerInfo = extendArray(newTowerInfo, miniInfo);
-	}
-	answerIndex = Date.now() % Object.keys(newTowerInfo).length;
-	for (r = 0; r < 6; r++) {
-		for (c = 0; c < 5; c++) {
-			modifyTable(r, c, "&#x200B;");
+		answerIndex = Date.now() % Object.keys(newTowerInfo).length;
+		for (r = 0; r < 6; r++) {
+			for (c = 0; c < 5; c++) {
+				modifyTable(r, c, "&#x200B;");
+			}
 		}
+		document.getElementById("feedback").innerHTML = "0/6 guesses" + getWinstreakMessage(winstreak);
+		document.getElementById("towerinput").value = "";
+		document.getElementById("resetbutton").innerHTML = "Reset"
+		wantReset=false;
+		setCanReset(true);
 	}
-	document.getElementById("feedback").innerHTML = "0/6 guesses" + getWinstreakMessage(winstreak);
-	document.getElementById("towerinput").value = "";
 }
 function toggle() {
 	document.body.classList.toggle("darkMode");
