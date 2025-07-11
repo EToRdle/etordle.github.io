@@ -83,7 +83,7 @@ var towerInfo = {
 
 	// Ring 5
 	"tonv": ["ToNV", 1, "Ring 5", "Tower", 0],
-	"togkd": ["ToGKD", 2, "Ring 5", "Tower", 0],
+	"totr": ["ToTR", 2, "Ring 5", "Tower", 0],
 	"tors": ["ToRS", 3, "Ring 5", "Tower", 0],
 	"todm": ["ToDM", 4, "Ring 5", "Tower", 0],
 	"tooc": ["ToOC", 4, "Ring 5", "Tower", 0],
