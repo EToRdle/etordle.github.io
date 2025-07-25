@@ -78,6 +78,7 @@ var towerInfo = {
 	"tohf": ["ToHF", 5, "Ring 4", "Tower", 0],
 	"tonp": ["ToNP", 6, "Ring 4", "Tower", 0],
 	"tocn": ["ToCN", 6, "Ring 4", "Tower", 0],
+	"tovs": ["ToVS", 7, "Ring 4", "Tower", 0],
 	"toi": ["ToI", 9, "Ring 4", "Tower", 1],
 	"cou": ["CoU", 5, "Ring 4", "Citadel", 1],
 
