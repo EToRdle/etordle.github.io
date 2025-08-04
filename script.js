@@ -459,6 +459,7 @@ var miniInfo = {
 	"ffast": ["FFAST", 3, "Ring 7", "Mini-Tower", 0],
 	"wbat": ["WBAT", 4, "Ring 4", "Mini-Tower", 0],
 	"neaf": ["NEAF", 4, "GoE", "Mini-Tower", 0],
+	"sat": ["SAT", 4, "Zone 1", "Mini-Tower", 0],
 	"tat": ["TAT", 5, "Ring 3", "Mini-Tower", 0],
 	"fnat": ["FNAT", 5, "Ring 6", "Mini-Tower", 0],
 }
