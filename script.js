@@ -149,7 +149,7 @@ var towerInfo = {
 	"toha": ["ToHA", 7, "Ring 9", "Tower", 0],
 	"tobt": ["ToBT", 7, "Ring 9", "Tower", 0],
 	"toca": ["ToCA", 7, "Ring 9", "Tower", 0],
-	"tofact": ["ToFaCT", 7, "Ring 9", "Tower", 1],
+	"tofact": ["ToFaCT", 8, "Ring 9", "Tower", 1],
 	"tobk": ["ToBK", 8, "Ring 9", "Tower", 0],
 	"toje": ["ToJE", 9, "Ring 9", "Tower", 0],
 	"tons": ["ToNS", 9, "Ring 9", "Tower", 2],
@@ -433,7 +433,7 @@ var towerInfo = {
 	"soca": ["SoCA", 4, "AA", "Steeple", 0],
 	"sowc": ["SoWC", 4, "AA", "Steeple", 0],
 	"somc": ["SoMC", 5, "AA", "Steeple", 1],
-	"toia": ["ToIA", 5, "AA", "Tower", 2],
+	"toia": ["ToIA", 6, "AA", "Tower", 2],
 
 	// PoM
 	"tomdc": ["ToMDC", 0, "PoM", "Tower", 0]
