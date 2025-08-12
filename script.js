@@ -409,6 +409,24 @@ var towerInfo = {
 	"torh": ["ToRH", 6, "AT", "Tower", 0],
 	"towf": ["ToWF", 8, "AT", "Tower", 0],
 
+	// TSA
+	"tolr": ["ToLR", 3, "TSA", "Tower", 4],
+	"toylfw": ["ToYLFW", 3, "TSA", "Tower", 1],
+	"topla": ["ToPLA", 3, "TSA", "Tower", 0],
+	"soald": ["SoALD", 4, "TSA", "Tower", 1],
+	"sobc": ["SoBC", 4, "TSA", "Tower", 0],
+	"sotmn": ["SoTMN", 4, "TSA", "Tower", 0],
+	"sotmm": ["SoTMM", 4, "TSA", "Tower", 2],
+	"totutu": ["ToTUTU", 5, "TSA", "Tower", 5],
+	"toir": ["ToIR", 5, "TSA", "Tower", 1],
+	"soib": ["SoIB", 5, "TSA", "Tower", 1],
+	"toade": ["ToADE", 5, "TSA", "Tower", 2],
+	"towr": ["ToWR", 5, "TSA", "Tower", 2],
+	"tohwh": ["ToHWH", 6, "TSA", "Tower", 2],
+	"toffee": ["ToFFEE", 6, "TSA", "Tower", 2],
+	"socv": ["SoCV", 6, "TSA", "Tower", 2],
+	"sofb": ["SoFB", 6, "TSA", "Tower", 0],
+
 	// PA
 	"somm": ["SoMM", 0, "PA", "Steeple", 0],
 	"soau": ["SoAU", 2, "PA", "Steeple", 0],
