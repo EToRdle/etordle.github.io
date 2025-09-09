@@ -515,9 +515,9 @@ var areaInfo = {
 	"LR": [0, 5, 1],
 	"AT": [0, 6, 1],
 	"TSA": [0, 8, 1],
-	"PA": [1, 1, 1],
+	"PA": [1, 3, 1],
 	"AA": [1, 2, 1],
-	"PoM": [1, 3, 1]
+	"PoM": [0, 1, 1]
 }
 
 function modifyTable(row, column, text) {
