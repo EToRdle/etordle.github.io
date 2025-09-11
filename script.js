@@ -182,7 +182,7 @@ var towerInfo = {
 	"togla": ["ToGLA", 2, "Zone 2", "Tower", 0],
 	"tota": ["ToTA", 3, "Zone 2", "Tower", 0],
 	"toud": ["ToUD", 3, "Zone 2", "Tower", 0],
-	"todac": ["ToDaC", 4, "Zone 2", "Tower", 0],
+	"todac": ["ToDaC", 3, "Zone 2", "Tower", 0],
 	"topf": ["ToPF", 4, "Zone 2", "Tower", 0],
 	"tosas": ["ToSaS", 4, "Zone 2", "Tower", 1],
 	"toee": ["ToEE", 5, "Zone 2", "Tower", 0],
@@ -297,7 +297,7 @@ var towerInfo = {
 	"cope": ["CoPE", 6, "Zone 8", "Citadel", 3],
 
 	// Zone 9
-	"toabcd": ["ToABCD", 4, "Zone 9", "Tower", 0],
+	"toabcd": ["ToABCD", 3, "Zone 9", "Tower", 0],
 	"todtd": ["ToDTD", 4, "Zone 9", "Tower", 0],
 	"tols": ["ToLS", 4, "Zone 9", "Tower", 1],
 	"tobl": ["ToBL", 4, "Zone 9", "Tower", 0],
@@ -316,7 +316,7 @@ var towerInfo = {
 	"coic": ["CoIC", 6, "Zone 9", "Citadel", 2],
 
 	// Zone 10
-	"tocz": ["ToCZ", 3, "Zone 10", "Tower", 0],
+	"tocz": ["ToCZ", 4, "Zone 10", "Tower", 0],
 	"torl": ["ToRL", 4, "Zone 10", "Tower", 1],
 	"toit": ["ToIT", 4, "Zone 10", "Tower", 1],
 	"tovv": ["ToVV", 4, "Zone 10", "Tower", 1],
@@ -452,11 +452,9 @@ var towerInfo = {
 	"sowc": ["SoWC", 4, "AA", "Steeple", 0],
 	"somc": ["SoMC", 5, "AA", "Steeple", 1],
 	"toia": ["ToIA", 6, "AA", "Tower", 2],
-
-	// PoM
-	"tomdc": ["ToMDC", 0, "PoM", "Tower", 0]
 }
-var PoMSCInfo = {
+var PoMSC = {
+	"tomdc": ["ToMDC", 0, "PoM", "Tower", 0]
 	"toxic": ["ToXIC", 9, "PoM", "Tower", 0],
 	"toolc": ["ToOLC", 9, "PoM", "Tower", 4],
 	"tovm": ["ToVM", 10, "PoM", "Tower", 2],
@@ -667,7 +665,7 @@ function reset() {
 		guessNum = 0;
 		newTowerInfo = { ...towerInfo };
 		if (document.getElementById("includepom").checked) {
-			newTowerInfo = extendArray(newTowerInfo, PoMSCInfo);
+			newTowerInfo = extendArray(newTowerInfo, PoMSC);
 			if (document.getElementById("includemini").checked) {
 				newTowerInfo = extendArray(newTowerInfo, PoMMiniInfo);
 			}
