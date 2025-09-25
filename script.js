@@ -454,7 +454,7 @@ var towerInfo = {
 	"toia": ["ToIA", 6, "AA", "Tower", 2],
 }
 var PoMSC = {
-	"tomdc": ["ToMDC", 0, "PoM", "Tower", 0]
+	"tomdc": ["ToMDC", 0, "PoM", "Tower", 0],
 	"toxic": ["ToXIC", 9, "PoM", "Tower", 0],
 	"toolc": ["ToOLC", 9, "PoM", "Tower", 4],
 	"tovm": ["ToVM", 10, "PoM", "Tower", 2],
@@ -465,7 +465,7 @@ var PoMSC = {
 	"totrp": ["ToTRP", 11, "PoM", "Tower", 0],
 	"tobf": ["ToBF", 12, "PoM", "Tower", 3],
 	"tosf": ["ToSF", 12, "PoM", "Tower", 2],
-	"coiv": ["CoIV", 12, "PoM", "Citadel", 5]
+	"coiv": ["CoIV", 12, "PoM", "Citadel", 5],
 }
 var miniInfo = {
 	"neat": ["NEAT", 0, "Ring 1", "Mini-Tower", 0],
