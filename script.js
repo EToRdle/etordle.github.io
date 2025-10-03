@@ -429,15 +429,19 @@ var towerInfo = {
 
 	// PA
 	"somm": ["SoMM", 0, "PA", "Steeple", 0],
+	"souv": ["SoUV", 1, "PA", "Steeple", 0],
+	"sow": ["SoW", 2, "PA", "Steeple", 0],
+	"tociad": ["ToCIAD", 2, "PA", "Tower", 0],
 	"soau": ["SoAU", 2, "PA", "Steeple", 0],
 	"sosis": ["SoSIS", 3, "PA", "Steeple", 0],
+	"tohp": ["ToHP", 3, "PA", "Tower", 1],
 	"soar": ["SoAR", 3, "PA", "Steeple", 0],
+	"sohs": ["SoHS", 3, "PA", "Steeple", 0],
 	"sodi": ["SoDI", 4, "PA", "Steeple", 0],
-	"sohs": ["SoHS", 4, "PA", "Steeple", 0],
 	"toci": ["ToCI", 4, "PA", "Tower", 0],
 	"socf": ["SoCF", 4, "PA", "Steeple", 0],
 	"souc": ["SoUC", 4, "PA", "Steeple", 0],
-	"tottt": ["ToTTT", 4, "PA", "Tower", 0],
+	"tottt": ["ToTTT", 5, "PA", "Tower", 0],
 	"soub": ["SoUB", 5, "PA", "Steeple", 0],
 	"sodd": ["SoDD", 5, "PA", "Steeple", 0],
 
