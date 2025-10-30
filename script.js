@@ -22,6 +22,20 @@ var guessNum = 0;
 var gameFrozen = false;
 var towerInfo = {
 
+	// Ring 0 / Purgatorio
+
+	"tog": ["ToG", 0, "Ring 0", "Tower", 0],
+	"tob": ["ToB", 0, "Ring 0", "Tower", 0],
+	"tome": ["ToME", 0, "Ring 0", "Tower", 0],
+	"tocd": ["ToCD", 0, "Ring 0", "Tower", 0],
+	"tobm": ["ToBM", 1, "Ring 0", "Tower", 0],
+	"tovp": ["ToVP", 1, "Ring 0", "Tower", 0],
+	"tokp": ["ToKP", 1, "Ring 0", "Tower", 0],
+	"tonsa": ["ToNSA", 1, "Ring 0", "Tower", 0],
+	"tokts": ["ToKTS", 2, "Ring 0", "Tower", 1],
+	"todan": ["ToDAN", 2, "Ring 0", "Tower", 0],
+	"cov": ["ToG", 2, "Ring 0", "Citadel", 2],
+	
 	// Ring 1
 	"toast": ["ToAST", 0, "Ring 1", "Tower", 0],
 	"toa": ["ToA", 0, "Ring 1", "Tower", 0],
@@ -472,6 +486,7 @@ var PoMSC = {
 	"coiv": ["CoIV", 12, "PoM", "Citadel", 5],
 }
 var miniInfo = {
+	"tnf": ["TNF", 2, "Ring 0", "Mini-Tower", 0],
 	"neat": ["NEAT", 0, "Ring 1", "Mini-Tower", 0],
 	"mat": ["MAT", 0, "Ring 2", "Mini-Tower", 0],
 	"pat": ["PAT", 0, "PA", "Mini-Tower", 0],
@@ -492,6 +507,7 @@ var answerIndex = Date.now() % Object.keys(towerInfo).length;
 var difficulties = ["Easy", "Medium", "Hard", "Difficult", "Challenging", "Intense", "Remorseless", "Insane", "Extreme", "Terrifying", "Catastrophic", "Horrific", "Unreal"];
 var lengths = ["Regular (<20m)", "Long (20-30m)", "Very Long (30-45m)", "Extremely Long (45-60m)", "Ridiculously Long (60-90m)", "Inhumanely Long (90+m)"];
 var areaInfo = {
+	"Ring 0": [0, 0, 0],
 	"Ring 1": [0, 1, 0],
 	"Ring 2": [0, 2, 0],
 	"Ring 3": [0, 3, 0],
