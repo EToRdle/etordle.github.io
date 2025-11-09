@@ -34,7 +34,7 @@ var towerInfo = {
 	"tonsa": ["ToNSA", 1, "Ring 0", "Tower", 0],
 	"tokts": ["ToKTS", 2, "Ring 0", "Tower", 1],
 	"todan": ["ToDAN", 2, "Ring 0", "Tower", 0],
-	"cov": ["ToG", 2, "Ring 0", "Citadel", 2],
+	"cov": ["CoV", 2, "Ring 0", "Citadel", 2],
 	
 	// Ring 1
 	"toast": ["ToAST", 0, "Ring 1", "Tower", 0],
