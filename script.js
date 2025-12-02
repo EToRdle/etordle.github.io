@@ -49,7 +49,7 @@ var towerInfo = {
 	"tor": ["ToR", 4, "Ring 1", "Tower", 0],
 	"toie": ["ToIE", 5, "Ring 1", "Tower", 0],
 	"tots": ["ToTS", 6, "Ring 1", "Tower", 0],
-	"tt": ["TT", 7, "Ring 1", "Tower", 0],
+	"toig": ["ToIG", 7, "Ring 1", "Tower", 1],
 	"cols": ["CoLS", 5, "Ring 1", "Citadel", 2],
 
 	// Ring 2
