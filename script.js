@@ -305,7 +305,7 @@ var towerInfo = {
 	"toov": ["ToOV", 6, "Zone 8", "Tower", 0],
 	"totasm": ["ToTaSM", 6, "Zone 8", "Tower", 1],
 	"tonr": ["ToNR", 6, "Zone 8", "Tower", 0],
-	"torer": ["ToRER", 7, "Zone 8", "Tower", 0],
+	"torer": ["ToRER", 7, "Zone 8", "Tower", 1],
 	"toae": ["ToAE", 8, "Zone 8", "Tower", 0],
 	"todie": ["ToDIE", 10, "Zone 8", "Tower", 0],
 	"cope": ["CoPE", 6, "Zone 8", "Citadel", 3],
@@ -424,7 +424,7 @@ var towerInfo = {
 	"towf": ["ToWF", 8, "ATw", "Tower", 0],
 
 	// TSA
-	"tolr": ["ToLR", 3, "TSA", "Tower", 4],
+	"tolr": ["ToLR", 3, "TSA", "Tower", 2],
 	"toylfw": ["ToYLFW", 3, "TSA", "Tower", 1],
 	"topla": ["ToPLA", 3, "TSA", "Tower", 0],
 	"soald": ["SoALD", 4, "TSA", "Steeple", 1],
