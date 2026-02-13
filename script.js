@@ -441,6 +441,37 @@ var towerInfo = {
 	"socv": ["SoCV", 6, "TSA", "Steeple", 2],
 	"sofb": ["SoFB", 6, "TSA", "Steeple", 0],
 
+	// SH
+	"sozzp": ["SoZZP", 0, "SH", "Steeple", 0],
+	"sogc": ["SoGC", 0, "SH", "Steeple", 0],
+	"tosl": ["ToSL", 1, "SH", "Tower", 0],
+	"toqr": ["ToQR", 1, "SH", "Tower", 0],
+	"tosat": ["ToSaT", 1, "SH", "Tower", 0],
+	"tofh": ["ToFH", 2, "SH", "Tower", 1],
+	"tocbts": ["ToCBTS", 2, "SH", "Tower", 1],
+	"totfc": ["ToTFC", 2, "SH", "Tower", 0],
+	"sobcm": ["SoBCM", 3, "SH", "Steeple", 0],
+	"sodr": ["SoDR", 4, "SH", "Steeple", 0],
+	"towe": ["ToWE", 4, "SH", "Tower", 1],
+	"sosk": ["SoSK", 4, "SH", "Steeple", 0],
+	"tofp": ["ToFP", 5, "SH", "Tower", 0],
+	"tonos": ["ToNoS", 5, "SH", "Tower", 1],
+	"cot": ["CoT", 5, "SH", "Citadel", 3],
+	"togk": ["ToGK", 6, "SH", "Tower", 1],
+	"tosrt": ["ToSRT", 7, "SH", "Tower", 0],
+	
+	// AA
+	"sobt": ["SoBT", 1, "AA", "Steeple", 0],
+	"soas": ["SoAS", 1, "AA", "Steeple", 0],
+	"soro": ["SoRO", 2, "AA", "Steeple", 0],
+	"soap": ["SoAP", 2, "AA", "Steeple", 0],
+	"sotc": ["SoTC", 3, "AA", "Steeple", 0],
+	"some": ["SoME", 3, "AA", "Steeple", 0],
+	"soca": ["SoCA", 4, "AA", "Steeple", 0],
+	"sowc": ["SoWC", 4, "AA", "Steeple", 0],
+	"somc": ["SoMC", 5, "AA", "Steeple", 1],
+	"toia": ["ToIA", 6, "AA", "Tower", 2],
+
 	// PA
 	"somm": ["SoMM", 0, "PA", "Steeple", 0],
 	"souv": ["SoUV", 1, "PA", "Steeple", 0],
@@ -458,18 +489,6 @@ var towerInfo = {
 	"tottt": ["ToTTT", 5, "PA", "Tower", 0],
 	"soub": ["SoUB", 5, "PA", "Steeple", 0],
 	"sodd": ["SoDD", 5, "PA", "Steeple", 0],
-
-	// AA
-	"sobt": ["SoBT", 1, "AA", "Steeple", 0],
-	"soas": ["SoAS", 1, "AA", "Steeple", 0],
-	"soro": ["SoRO", 2, "AA", "Steeple", 0],
-	"soap": ["SoAP", 2, "AA", "Steeple", 0],
-	"sotc": ["SoTC", 3, "AA", "Steeple", 0],
-	"some": ["SoME", 3, "AA", "Steeple", 0],
-	"soca": ["SoCA", 4, "AA", "Steeple", 0],
-	"sowc": ["SoWC", 4, "AA", "Steeple", 0],
-	"somc": ["SoMC", 5, "AA", "Steeple", 1],
-	"toia": ["ToIA", 6, "AA", "Tower", 2],
 }
 var PoMSC = {
 	"tomdc": ["ToMDC", 0, "PoM", "Tower", 0],
@@ -533,8 +552,9 @@ var areaInfo = {
 	"LR": [0, 5, 1],
 	"ATw": [0, 6, 1],
 	"TSA": [0, 8, 1],
-	"PA": [1, 3, 1],
+	"SH": [1, 1, 1],
 	"AA": [1, 2, 1],
+	"PA": [1, 3, 1],
 	"PoM": [0, 1, 1]
 }
 
